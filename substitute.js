@@ -1,4 +1,4 @@
-console.info('Plaid extension is running');
+console.info('Chrome extension is running');
 
 var headers = document.getElementsByTagName('h1');
 
