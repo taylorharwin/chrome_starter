@@ -25,7 +25,7 @@ build:
 
 .PHONY: clean
 clean:
-	@rm -rf dist coverage
+	@rm -rf build
 
 .PHONY: lint
 lint:
@@ -36,7 +36,7 @@ lint-fix:
 	@$(ESLINT) --fix -- $(LINT_FILES) .eslintrc.js
 
 .PHONY: setup
-setup: setup-hooks setup-dependencies
+setup: setup-dependencies
 
 .PHONY: test
 test: export NODE_PATH = $(SRC_PWD):src
@@ -46,11 +46,6 @@ test:
 .PHONY: setup-dependencies
 setup-dependencies:
 	@$(NPM) install
-
-.PHONY: setup-hooks
-setup-hooks:
-	@chmod oug+x githooks/*
-	@cp githooks/* .git/hooks/
 
 .PHONY: watch
 watch:
