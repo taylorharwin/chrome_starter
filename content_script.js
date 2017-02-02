@@ -1,2 +1,1 @@
-console.log('the content script is loaded');
-
+console.log('ext loaded');

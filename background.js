@@ -14,6 +14,20 @@ function createPITMHeaders(params){
   return PITMHeaders;
 }
 
+console.log('ext loaded');
+
+chrome.browserAction.onClicked.addListener(function() {
+  console.log('clicked browser');
+   chrome.windows.create(
+    {
+    'url': 'index.html', 
+    'type': 'popup',
+    'height': 550,
+    'width': 500
+  }, function(window) {
+   });
+});
+
 
 chrome.webRequest.onBeforeSendHeaders.addListener(
     function(details) {
