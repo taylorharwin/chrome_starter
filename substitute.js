@@ -1,7 +1,6 @@
-console.info('Chrome extension is running');
-
-var headers = document.getElementsByTagName('h1');
-
-for (var i = 0; i <= headers.length; i++) {
-	headers[i].innerHTML = 'Hello World';
-}
+chrome.webRequest.onBeforeSendHeaders.addListener(
+        function(details) {
+          console.log(details);
+        },
+        {urls: ["<all_urls>"]},
+        ["blocking", "requestHeaders"]);

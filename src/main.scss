@@ -1,0 +1,36 @@
+// Vendor
+@import '../node_modules/plaid-threads/lib/vendor/reset-css/reset.scss';
+@import '../node_modules/plaid-threads/lib/vendor/inuit-responsive-settings/settings.responsive';
+@import '../node_modules/plaid-threads/lib/vendor/inuit-responsive-tools/tools.responsive';
+@import '../node_modules/plaid-threads/lib/vendor/prism/prism';
+
+// Utilities
+@import '../node_modules/plaid-threads/lib/utilities/utilities';
+@import '../node_modules/plaid-threads/lib/utilities/functions';
+@import '../node_modules/plaid-threads/lib/utilities/variables';
+
+// Base
+@import '../node_modules/plaid-threads/lib/base/base';
+@import '../node_modules/plaid-threads/lib/base/buttons';
+@import '../node_modules/plaid-threads/lib/base/tables';
+@import '../node_modules/plaid-threads/lib/base/typography';
+
+// Components
+@import '../node_modules/plaid-threads/lib/components/banners';
+@import '../node_modules/plaid-threads/lib/components/brand';
+@import '../node_modules/plaid-threads/lib/components/grid';
+@import '../node_modules/plaid-threads/lib/components/inputs';
+@import '../node_modules/plaid-threads/lib/components/notes';
+@import '../node_modules/plaid-threads/lib/components/vertical-navigation';
+@import '../node_modules/plaid-threads/lib/components/horizontal-navigation';
+@import '../node_modules/plaid-threads/lib/components/action-card';
+
+.plaid-header {
+	background-color: $variables-primary-blue-light;
+	padding: 24px 16px;
+}
+
+body {
+  min-width:400px;
+  padding:10px 10px 10px 10px;
+}
